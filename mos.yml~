@@ -1,0 +1,35 @@
+author: mongoose-os
+description: A JS-enabled demo Mongoose OS firmware
+# arch: PLATFORM
+version: 1.0
+manifest_version: 2017-05-18
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+
+conds:
+  - when: mos.platform == "esp32"
+    apply:
+      build_vars:                                           # Add these
+        ESP_IDF_EXTRA_PARTITION: fs_ext,data,spiffs,,2048K   # two lines
+
+# Optional. List of tags for online search.
+
+
+# List of files / directories with C sources. No slashes at the end of dir names.
+sources:
+  - src
+
+config_schema:
+  - ["mqtt.server", "iot.eclipse.org:1883"]
+  - ["i2c.enable", true]
+
+tags:
+  - js
+
+filesystem:
+  - fs
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/js-demo-bundle

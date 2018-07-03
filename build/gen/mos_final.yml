@@ -7,151 +7,150 @@ platforms:
 author: mongoose-os
 description: A JS-enabled demo Mongoose OS firmware
 sources:
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/src/main.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/build/gen/mgos_deps_init.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/adc/esp32/src/esp32_adc.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/src/mgos_i2c.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/esp32/src/esp32_i2c_master.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/atca/src/mgos_atca.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mqtt/src/mgos_mqtt.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/shadow/src/mgos_shadow.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws_greengrass.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws_shadow.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/sntp/src/mgos_sntp.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_cm.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_dm.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_sas.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_shadow.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/mgos_bt.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/mgos_bt_gap.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gap.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gattc.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gatts.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-config/src/esp32/esp32_bt_svc_config.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-debug/src/esp32/esp32_bt_svc_debug.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/http-server/src/mgos_http_server.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel_http.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel_ws.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mgos_rpc.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dht/src/mgos_dht.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/mgos_dns_sd.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/mgos_mdns.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/lwip/lwip_mdns.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/esp32-touchpad/src/esp32_touchpad.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ethernet/src/mgos_eth.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ethernet/src/esp32/esp32_eth.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/gcp/src/mgos_gcp.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/neopixel/src/mgos_neopixel.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pppos/src/mgos_pppos.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/src/mgos_pwm.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/src/esp32/esp32_pwm.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-azure/src/mgos_rpc_channel_azure_dm.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-gatts/src/esp32/esp32_rpc_channel_gatts.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-loopback/src/mg_rpc_channel_loopback.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-mqtt/src/mgos_rpc_channel_mqtt.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-atca/src/mgos_atca_service.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-config/src/mgos_service_config.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-fs/src/mgos_service_filesystem.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-gpio/src/mgos_gpio_service.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-i2c/src/mgos_i2c_service.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/src/mgos_wifi.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/src/mjs_wifi.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/esp32/src/esp32_wifi.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-wifi/src/mgos_rpc_service_wifi.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-uart/src/mgos_rpc_channel_uart.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/mgos_spi.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/mgos_spi_mjs.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/esp32/esp32_spi_master.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/vfs-dev-spi-flash/src/mgos_vfs_dev_spi_flash.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/watson/src/mgos_watson.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/demo-bundle/src/mgos_demo_bundle.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/src/mos_mjs.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/modules/mjs_module/mjs.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/esp32/src/esp32_mjs.c
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/js-demo-bundle/src/mgos_js_demo_bundle.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/src/main.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/build/gen/mgos_deps_init.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/adc/esp32/src/esp32_adc.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/src/mgos_i2c.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/esp32/src/esp32_i2c_master.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/atca/src/mgos_atca.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mqtt/src/mgos_mqtt.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/shadow/src/mgos_shadow.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws_greengrass.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws_shadow.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/sntp/src/mgos_sntp.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_cm.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_dm.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_sas.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_shadow.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/mgos_bt.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/mgos_bt_gap.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gap.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gattc.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gatts.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-config/src/esp32/esp32_bt_svc_config.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-debug/src/esp32/esp32_bt_svc_debug.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/http-server/src/mgos_http_server.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel_http.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel_ws.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mgos_rpc.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dht/src/mgos_dht.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/mgos_dns_sd.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/mgos_mdns.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/lwip/lwip_mdns.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/esp32-touchpad/src/esp32_touchpad.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ethernet/src/mgos_eth.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ethernet/src/esp32/esp32_eth.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/gcp/src/mgos_gcp.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/neopixel/src/mgos_neopixel.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pppos/src/mgos_pppos.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/src/mgos_pwm.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/src/esp32/esp32_pwm.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-azure/src/mgos_rpc_channel_azure_dm.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-gatts/src/esp32/esp32_rpc_channel_gatts.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-loopback/src/mg_rpc_channel_loopback.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-mqtt/src/mgos_rpc_channel_mqtt.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-atca/src/mgos_atca_service.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-config/src/mgos_service_config.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-fs/src/mgos_service_filesystem.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-gpio/src/mgos_gpio_service.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-i2c/src/mgos_i2c_service.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/src/mgos_wifi.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/src/mjs_wifi.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/esp32/src/esp32_wifi.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-wifi/src/mgos_rpc_service_wifi.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-uart/src/mgos_rpc_channel_uart.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/mgos_spi.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/mgos_spi_mjs.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/esp32/esp32_spi_master.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/vfs-dev-spi-flash/src/mgos_vfs_dev_spi_flash.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/watson/src/mgos_watson.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/demo-bundle/src/mgos_demo_bundle.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/src/mos_mjs.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/modules/mjs_module/mjs.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/esp32/src/esp32_mjs.c
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/js-demo-bundle/src/mgos_js_demo_bundle.c
 includes:
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/adc/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mongoose/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/atca/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mqtt/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/shadow/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/include/esp32
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/http-server/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/include/mg_rpc
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dash/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dht/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/neopixel/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-client/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-loopback/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-mqtt/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-config/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-fs/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-gpio/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-i2c/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-ota/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/esp32/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-uart/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/vfs-dev-spi-flash/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/watson/include
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/adc/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mongoose/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/atca/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mqtt/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/shadow/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/include/esp32
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/http-server/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/include/mg_rpc
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dash/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dht/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/neopixel/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-client/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-loopback/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-mqtt/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-config/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-fs/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-gpio/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-i2c/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-ota/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/esp32/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-uart/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/vfs-dev-spi-flash/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/watson/include
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/include
 filesystem:
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ca-bundle/fs/ca.pem
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_bitbang.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_config.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_events.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_gpio.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_grove.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_http.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_log.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_net.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_sys.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_timer.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/api_uart.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/fs/init.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/modules/mjs_module/mjs/lib/api_dataview.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/modules/mjs_module/mjs/lib/api_file.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/modules/mjs_module/mjs/lib/api_math.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/adc/mjs_fs/api_adc.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/mjs_fs/api_i2c.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mqtt/mjs_fs/api_mqtt.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/shadow/mjs_fs/api_shadow.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/mjs_fs/api_aws.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/mjs_fs/api_azure.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/mjs_fs/api_rpc.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dht/mjs_fs/api_dht.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/esp32-touchpad/mjs_fs/api_esp32_touchpad.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/neopixel/mjs_fs/api_neopixel.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-client/mjs_fs/api_ota.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/mjs_fs/api_pwm.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/mjs_fs/api_wifi.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/mjs_fs/api_spi.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/watson/mjs_fs/api_watson.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/esp32/fs/api_arch_uart.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/esp32/fs/api_esp32.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/fs/fw.zip
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/fs/init.js
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/fs/ota.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ca-bundle/fs/ca.pem
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_bitbang.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_config.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_events.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_gpio.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_grove.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_http.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_log.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_net.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_sys.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_timer.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/api_uart.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/fs/init.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/modules/mjs_module/mjs/lib/api_dataview.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/modules/mjs_module/mjs/lib/api_file.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/modules/mjs_module/mjs/lib/api_math.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/adc/mjs_fs/api_adc.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/mjs_fs/api_i2c.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mqtt/mjs_fs/api_mqtt.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/shadow/mjs_fs/api_shadow.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/mjs_fs/api_aws.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/mjs_fs/api_azure.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/mjs_fs/api_rpc.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dht/mjs_fs/api_dht.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/esp32-touchpad/mjs_fs/api_esp32_touchpad.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/neopixel/mjs_fs/api_neopixel.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-client/mjs_fs/api_ota.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/mjs_fs/api_pwm.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/mjs_fs/api_wifi.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/mjs_fs/api_spi.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/watson/mjs_fs/api_watson.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/esp32/fs/api_arch_uart.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/esp32/fs/api_esp32.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/fs/init.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/fs/ota.js
 binary_libs:
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mongoose/lib/esp32/libmongoose.a
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-shadow/lib/esp32/libota-shadow.a
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dash/lib/esp32/libdash.a
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-client/lib/esp32/libota-http-client.a
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-server/lib/esp32/libota-http-server.a
-- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-ota/lib/esp32/librpc-service-ota.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mongoose/lib/esp32/libmongoose.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-shadow/lib/esp32/libota-shadow.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dash/lib/esp32/libdash.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-client/lib/esp32/libota-http-client.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-server/lib/esp32/libota-http-server.a
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-ota/lib/esp32/librpc-service-ota.a
 modules:
 - origin: https://github.com/cesanta/mjs
   location: https://github.com/cesanta/mjs
@@ -1087,6 +1086,7 @@ config_schema:
   - true
 build_vars:
   ESP_IDF_EXTRA_COMPONENTS: ' bt'
+  ESP_IDF_EXTRA_PARTITION: fs_ext,data,spiffs,,2048K
   ESP_IDF_SDKCONFIG_OPTS: |2-
      CONFIG_BT_ENABLED=y CONFIG_BLUEDROID_ENABLED=y CONFIG_BTC_TASK_STACK_SIZE=6144 CONFIG_BLUEDROID_MEM_DEBUG= CONFIG_CLASSIC_BT_ENABLED= CONFIG_BT_DRAM_RELEASE=y CONFIG_GATTS_ENABLE=y CONFIG_GATTC_ENABLE=y CONFIG_BLE_SMP_ENABLE=y CONFIG_BT_STACK_NO_LOG= CONFIG_BT_ACL_CONNECTIONS=4 CONFIG_BTDM_CONTROLLER_RUN_CPU=0 CONFIG_SMP_ENABLE=y CONFIG_BT_RESERVE_DRAM=0x10000
      CONFIG_PPP_SUPPORT=y
@@ -1208,285 +1208,285 @@ mongoose_os_version: "2.3"
 manifest_version: 2017-05-18
 libs_handled:
 - name: adc
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/adc
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/adc
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/adc/esp32/src/esp32_adc.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/adc/esp32/src/esp32_adc.c
 - name: mongoose
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mongoose
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mongoose
 - name: i2c
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/src/mgos_i2c.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/i2c/esp32/src/esp32_i2c_master.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/src/mgos_i2c.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/i2c/esp32/src/esp32_i2c_master.c
 - name: atca
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/atca
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/atca
   deps:
   - i2c
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/atca/src/mgos_atca.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/atca/src/mgos_atca.c
 - name: ca-bundle
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ca-bundle
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ca-bundle
   deps:
   - mongoose
 - name: mqtt
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mqtt
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mqtt
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mqtt/src/mgos_mqtt.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mqtt/src/mgos_mqtt.c
 - name: shadow
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/shadow
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/shadow
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/shadow/src/mgos_shadow.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/shadow/src/mgos_shadow.c
 - name: aws
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws
   deps:
   - ca-bundle
   - mqtt
   - shadow
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws_greengrass.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/aws/src/mgos_aws_shadow.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws_greengrass.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/aws/src/mgos_aws_shadow.c
 - name: sntp
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/sntp
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/sntp
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/sntp/src/mgos_sntp.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/sntp/src/mgos_sntp.c
 - name: azure
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure
   deps:
   - ca-bundle
   - mqtt
   - shadow
   - sntp
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_cm.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_dm.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_sas.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/azure/src/mgos_azure_shadow.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_cm.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_dm.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_sas.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/azure/src/mgos_azure_shadow.c
 - name: bt-common
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/mgos_bt.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/mgos_bt_gap.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gap.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gattc.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-common/src/esp32/esp32_bt_gatts.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/mgos_bt.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/mgos_bt_gap.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gap.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gattc.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-common/src/esp32/esp32_bt_gatts.c
 - name: bt-service-config
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-config
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-config
   deps:
   - bt-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-config/src/esp32/esp32_bt_svc_config.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-config/src/esp32/esp32_bt_svc_config.c
 - name: bt-service-debug
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-debug
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-debug
   deps:
   - bt-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/bt-service-debug/src/esp32/esp32_bt_svc_debug.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/bt-service-debug/src/esp32/esp32_bt_svc_debug.c
 - name: ota-shadow
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-shadow
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-shadow
   deps:
   - shadow
 - name: http-server
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/http-server
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/http-server
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/http-server/src/mgos_http_server.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/http-server/src/mgos_http_server.c
 - name: rpc-common
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common
   deps:
   - http-server
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel_http.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mg_rpc/mg_rpc_channel_ws.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-common/src/mgos_rpc.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel_http.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mg_rpc/mg_rpc_channel_ws.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-common/src/mgos_rpc.c
 - name: dash
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dash
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dash
   deps:
   - ota-shadow
   - rpc-common
   - shadow
 - name: dht
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dht
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dht
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dht/src/mgos_dht.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dht/src/mgos_dht.c
 - name: dns-sd
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd
   deps:
   - http-server
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/mgos_dns_sd.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/mgos_mdns.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/dns-sd/src/lwip/lwip_mdns.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/mgos_dns_sd.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/mgos_mdns.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/dns-sd/src/lwip/lwip_mdns.c
 - name: esp32-touchpad
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/esp32-touchpad
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/esp32-touchpad
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/esp32-touchpad/src/esp32_touchpad.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/esp32-touchpad/src/esp32_touchpad.c
 - name: ethernet
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ethernet
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ethernet
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ethernet/src/mgos_eth.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ethernet/src/esp32/esp32_eth.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ethernet/src/mgos_eth.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ethernet/src/esp32/esp32_eth.c
 - name: gcp
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/gcp
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/gcp
   deps:
   - ca-bundle
   - mqtt
   - sntp
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/gcp/src/mgos_gcp.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/gcp/src/mgos_gcp.c
 - name: neopixel
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/neopixel
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/neopixel
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/neopixel/src/mgos_neopixel.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/neopixel/src/mgos_neopixel.c
 - name: ota-http-client
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-client
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-client
   deps:
   - mongoose
 - name: ota-http-server
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/ota-http-server
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/ota-http-server
   deps:
   - http-server
   - ota-http-client
 - name: pppos
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pppos
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pppos
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pppos/src/mgos_pppos.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pppos/src/mgos_pppos.c
 - name: pwm
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/src/mgos_pwm.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/pwm/src/esp32/esp32_pwm.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/src/mgos_pwm.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/pwm/src/esp32/esp32_pwm.c
 - name: rpc-azure
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-azure
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-azure
   deps:
   - azure
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-azure/src/mgos_rpc_channel_azure_dm.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-azure/src/mgos_rpc_channel_azure_dm.c
 - name: rpc-gatts
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-gatts
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-gatts
   deps:
   - bt-common
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-gatts/src/esp32/esp32_rpc_channel_gatts.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-gatts/src/esp32/esp32_rpc_channel_gatts.c
 - name: rpc-loopback
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-loopback
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-loopback
   deps:
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-loopback/src/mg_rpc_channel_loopback.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-loopback/src/mg_rpc_channel_loopback.c
 - name: rpc-mqtt
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-mqtt
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-mqtt
   deps:
   - mqtt
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-mqtt/src/mgos_rpc_channel_mqtt.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-mqtt/src/mgos_rpc_channel_mqtt.c
 - name: rpc-service-atca
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-atca
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-atca
   deps:
   - atca
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-atca/src/mgos_atca_service.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-atca/src/mgos_atca_service.c
 - name: rpc-service-config
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-config
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-config
   deps:
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-config/src/mgos_service_config.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-config/src/mgos_service_config.c
 - name: rpc-service-fs
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-fs
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-fs
   deps:
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-fs/src/mgos_service_filesystem.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-fs/src/mgos_service_filesystem.c
 - name: rpc-service-gpio
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-gpio
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-gpio
   deps:
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-gpio/src/mgos_gpio_service.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-gpio/src/mgos_gpio_service.c
 - name: rpc-service-i2c
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-i2c
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-i2c
   deps:
   - i2c
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-i2c/src/mgos_i2c_service.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-i2c/src/mgos_i2c_service.c
 - name: rpc-service-ota
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-ota
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-ota
   deps:
   - ota-http-client
   - rpc-common
 - name: wifi
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/src/mgos_wifi.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/src/mjs_wifi.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/wifi/esp32/src/esp32_wifi.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/src/mgos_wifi.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/src/mjs_wifi.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/wifi/esp32/src/esp32_wifi.c
 - name: rpc-service-wifi
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-wifi
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-wifi
   deps:
   - rpc-common
   - wifi
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-service-wifi/src/mgos_rpc_service_wifi.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-service-wifi/src/mgos_rpc_service_wifi.c
 - name: rpc-uart
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-uart
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-uart
   deps:
   - rpc-common
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/rpc-uart/src/mgos_rpc_channel_uart.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/rpc-uart/src/mgos_rpc_channel_uart.c
 - name: spi
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/mgos_spi.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/mgos_spi_mjs.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/spi/src/esp32/esp32_spi_master.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/mgos_spi.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/mgos_spi_mjs.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/spi/src/esp32/esp32_spi_master.c
 - name: vfs-dev-spi-flash
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/vfs-dev-spi-flash
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/vfs-dev-spi-flash
   deps:
   - spi
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/vfs-dev-spi-flash/src/mgos_vfs_dev_spi_flash.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/vfs-dev-spi-flash/src/mgos_vfs_dev_spi_flash.c
 - name: watson
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/watson
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/watson
   deps:
   - ca-bundle
   - mqtt
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/watson/src/mgos_watson.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/watson/src/mgos_watson.c
 - name: demo-bundle
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/demo-bundle
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/demo-bundle
   deps:
   - adc
   - atca
@@ -1528,22 +1528,22 @@ libs_handled:
   - watson
   - wifi
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/demo-bundle/src/mgos_demo_bundle.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/demo-bundle/src/mgos_demo_bundle.c
 - name: mjs
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs
   deps:
   - mongoose
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/src/mos_mjs.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/modules/mjs_module/mjs.c
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/mjs/esp32/src/esp32_mjs.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/src/mos_mjs.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/modules/mjs_module/mjs.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/mjs/esp32/src/esp32_mjs.c
 - name: js-demo-bundle
-  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/js-demo-bundle
+  path: /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/js-demo-bundle
   deps:
   - demo-bundle
   - mjs
   sources:
-  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_508999665/libs/js-demo-bundle/src/mgos_js_demo_bundle.c
+  - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_785234533/libs/js-demo-bundle/src/mgos_js_demo_bundle.c
 init_deps:
 - adc
 - mongoose
