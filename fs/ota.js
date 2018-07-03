@@ -6,7 +6,7 @@ let download=function(_callback){
 
 
     callback=_callback;
-    let args={"url": "http://192.168.1.102/chunk/files/chunk_0001", "file": "chunk"};
+    let args={"url": "http://192.168.1.102/chunk/download.php", "file": "chunk"};
 
 
     RPC.call(RPC.LOCAL,'Fetch',args,function(res){
