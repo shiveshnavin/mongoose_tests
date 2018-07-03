@@ -1,0 +1,311 @@
+{
+  "update": {
+    "timeout": 300, 
+    "commit_timeout": 0, 
+    "url": "", 
+    "interval": 0, 
+    "ssl_ca_file": "ca.pem", 
+    "ssl_client_cert_file": "", 
+    "ssl_server_name": "", 
+    "enable_post": true
+  }, 
+  "device": {
+    "id": "esp32_??????", 
+    "password": ""
+  }, 
+  "debug": {
+    "udp_log_addr": "", 
+    "level": 2, 
+    "filter": "", 
+    "stdout_uart": 0, 
+    "stderr_uart": 0, 
+    "factory_reset_gpio": -1, 
+    "mg_mgr_hexdump_file": "", 
+    "mbedtls_level": 0, 
+    "stdout_topic": "", 
+    "stderr_topic": ""
+  }, 
+  "sys": {
+    "mount": {
+      "path": "", 
+      "dev_type": "", 
+      "dev_opts": "", 
+      "fs_type": "", 
+      "fs_opts": ""
+    }, 
+    "tz_spec": "", 
+    "wdt_timeout": 30, 
+    "pref_ota_lib": "", 
+    "esp32_adc_vref": 0, 
+    "atca": {
+      "enable": false, 
+      "i2c_addr": 96, 
+      "ecdh_slots_mask": 12
+    }
+  }, 
+  "conf_acl": "*", 
+  "i2c": {
+    "enable": true, 
+    "freq": 100000, 
+    "debug": false, 
+    "unit_no": 0, 
+    "sda_gpio": 32, 
+    "scl_gpio": 33
+  }, 
+  "mqtt": {
+    "enable": false, 
+    "server": "iot.eclipse.org:1883", 
+    "client_id": "", 
+    "user": "", 
+    "pass": "", 
+    "reconnect_timeout_min": 2.0, 
+    "reconnect_timeout_max": 60.0, 
+    "ssl_cert": "", 
+    "ssl_key": "", 
+    "ssl_ca_cert": "", 
+    "ssl_cipher_suites": "", 
+    "ssl_psk_identity": "", 
+    "ssl_psk_key": "", 
+    "clean_session": true, 
+    "keep_alive": 60, 
+    "will_topic": "", 
+    "will_message": "", 
+    "max_qos": 2, 
+    "recv_mbuf_limit": 8192
+  }, 
+  "shadow": {
+    "enable": true, 
+    "lib": "", 
+    "ota_enable": true, 
+    "autocommit": true
+  }, 
+  "aws": {
+    "thing_name": "", 
+    "greengrass": {
+      "enable": false, 
+      "reconnect_timeout_min": 2, 
+      "reconnect_timeout_max": 60
+    }
+  }, 
+  "sntp": {
+    "enable": true, 
+    "server": "time.google.com", 
+    "retry_min": 1, 
+    "retry_max": 30, 
+    "update_interval": 7200
+  }, 
+  "azure": {
+    "enable": false, 
+    "cs": "", 
+    "token_ttl": 3600, 
+    "host_name": "", 
+    "device_id": "", 
+    "cert": "", 
+    "key": "", 
+    "enable_cm": true, 
+    "enable_dm": true
+  }, 
+  "bt": {
+    "enable": true, 
+    "dev_name": "", 
+    "adv_enable": true, 
+    "scan_rsp_data_hex": "", 
+    "keep_enabled": false, 
+    "allow_pairing": true, 
+    "max_paired_devices": -1, 
+    "random_address": true, 
+    "gatts": {
+      "min_sec_level": 0, 
+      "require_pairing": false
+    }, 
+    "config_svc_enable": true, 
+    "debug_svc_enable": true
+  }, 
+  "http": {
+    "enable": true, 
+    "listen_addr": "80", 
+    "document_root": "/", 
+    "ssl_cert": "", 
+    "ssl_key": "", 
+    "ssl_ca_cert": "", 
+    "upload_acl": "*", 
+    "hidden_files": "", 
+    "auth_domain": "", 
+    "auth_file": ""
+  }, 
+  "rpc": {
+    "enable": true, 
+    "max_frame_size": 4096, 
+    "max_queue_length": 25, 
+    "default_out_channel_idle_close_timeout": 10, 
+    "acl_file": "", 
+    "auth_domain": "", 
+    "auth_file": "", 
+    "ws": {
+      "enable": true, 
+      "server_address": "", 
+      "reconnect_interval_min": 1, 
+      "reconnect_interval_max": 60, 
+      "ssl_server_name": "", 
+      "ssl_ca_file": "", 
+      "ssl_client_cert_file": ""
+    }, 
+    "azure": {}, 
+    "enable_dm": true, 
+    "gatts": {
+      "enable": true
+    }, 
+    "mqtt": {
+      "enable": true, 
+      "pub_topic": "%.*s/rpc", 
+      "sub_topic": "%.*s/rpc", 
+      "sub_wc": true, 
+      "qos": 1
+    }, 
+    "uart": {
+      "uart_no": 0, 
+      "baud_rate": 115200, 
+      "fc_type": 2
+    }
+  }, 
+  "dash": {
+    "enable": false, 
+    "token": "", 
+    "server": "wss://dash.mongoose-os.com/api/v1/rpc", 
+    "ca_file": "ca.pem", 
+    "send_logs": true, 
+    "stats_interval": 10, 
+    "ota_chunk_size": 1024
+  }, 
+  "dns_sd": {
+    "enable": false, 
+    "host_name": "mOS-esp32-??????", 
+    "txt": "", 
+    "ttl": 120
+  }, 
+  "eth": {
+    "enable": false, 
+    "phy_addr": 0, 
+    "ip": "", 
+    "netmask": "", 
+    "gw": "", 
+    "clk_mode": 0, 
+    "mdc_gpio": 23, 
+    "mdio_gpio": 18
+  }, 
+  "gcp": {
+    "enable": false, 
+    "project": "", 
+    "region": "", 
+    "registry": "", 
+    "device": "", 
+    "key": "", 
+    "token_ttl": 3600
+  }, 
+  "pppos": {
+    "enable": false, 
+    "uart_no": 1, 
+    "baud_rate": 115200, 
+    "fc_enable": false, 
+    "apn": "", 
+    "user": "", 
+    "pass": "", 
+    "connect_cmd": "ATDT*99***1#", 
+    "echo_interval": 10, 
+    "echo_fails": 3, 
+    "hexdump_enable": false
+  }, 
+  "wifi": {
+    "ap": {
+      "enable": true, 
+      "ssid": "Mongoose_??????", 
+      "pass": "Mongoose", 
+      "hidden": false, 
+      "channel": 6, 
+      "max_connections": 10, 
+      "ip": "192.168.4.1", 
+      "netmask": "255.255.255.0", 
+      "gw": "192.168.4.1", 
+      "dhcp_start": "192.168.4.2", 
+      "dhcp_end": "192.168.4.100", 
+      "trigger_on_gpio": -1, 
+      "disable_after": 0, 
+      "hostname": "", 
+      "keep_enabled": true
+    }, 
+    "sta": {
+      "enable": false, 
+      "ssid": "", 
+      "pass": "", 
+      "user": "", 
+      "anon_identity": "", 
+      "cert": "", 
+      "key": "", 
+      "ca_cert": "", 
+      "ip": "", 
+      "netmask": "", 
+      "gw": "", 
+      "nameserver": "", 
+      "dhcp_hostname": ""
+    }, 
+    "sta1": {
+      "enable": false, 
+      "ssid": "", 
+      "pass": "", 
+      "user": "", 
+      "anon_identity": "", 
+      "cert": "", 
+      "key": "", 
+      "ca_cert": "", 
+      "ip": "", 
+      "netmask": "", 
+      "gw": "", 
+      "nameserver": "", 
+      "dhcp_hostname": ""
+    }, 
+    "sta2": {
+      "enable": false, 
+      "ssid": "", 
+      "pass": "", 
+      "user": "", 
+      "anon_identity": "", 
+      "cert": "", 
+      "key": "", 
+      "ca_cert": "", 
+      "ip": "", 
+      "netmask": "", 
+      "gw": "", 
+      "nameserver": "", 
+      "dhcp_hostname": ""
+    }, 
+    "sta_cfg_idx": 0, 
+    "sta_connect_timeout": 30
+  }, 
+  "spi": {
+    "enable": false, 
+    "debug": false, 
+    "unit_no": 3, 
+    "miso_gpio": 19, 
+    "mosi_gpio": 23, 
+    "sclk_gpio": 18, 
+    "cs0_gpio": 5, 
+    "cs1_gpio": -1, 
+    "cs2_gpio": -1
+  }, 
+  "watson": {
+    "enable": false, 
+    "host_name": "", 
+    "client_id": "", 
+    "token": "", 
+    "cert": "", 
+    "key": "", 
+    "ca_cert": ""
+  }, 
+  "pins": {
+    "led": 21, 
+    "button": 0
+  }, 
+  "mjs": {
+    "generate_jsc": true
+  }
+}

@@ -1,39 +1,17 @@
-load('api_config.js');
 load('api_events.js');
 load('api_gpio.js');
-load('api_mqtt.js');
 load('api_net.js');
 load('api_sys.js');
-load('api_timer.js');
+load('api_config.js');
+load('ota.js');
 
-let led = Cfg.get('pins.led');
-let button = Cfg.get('pins.button');
-let topic = '/devices/' + Cfg.get('device.id') + '/events';
 
-print('LED GPIO:', led, 'button GPIO:', button);
+  Cfg.set( {wifi: {sta: {ssid: "JioFi2_00C3E7"}}} );
+  Cfg.set( {wifi: {sta: {pass: "ytf47mnfjn"}}} );
+  Cfg.set({wifi: {sta: {enable: true}}});
+  print("WIFI CONFIGURED");
 
-let getInfo = function() {
-  return JSON.stringify({
-    total_ram: Sys.total_ram(),
-    free_ram: Sys.free_ram()
-  });
-};
 
-// Blink built-in LED every second
-GPIO.set_mode(led, GPIO.MODE_OUTPUT);
-Timer.set(1000 /* 1 sec */, Timer.REPEAT, function() {
-  let value = GPIO.toggle(led);
-  print(value ? 'Tick' : 'Tock', 'uptime:', Sys.uptime(), getInfo());
-}, null);
-
-// Publish to MQTT topic on a button press. Button is wired to GPIO pin 0
-GPIO.set_button_handler(button, GPIO.PULL_UP, GPIO.INT_EDGE_NEG, 20, function() {
-  let message = getInfo();
-  let ok = MQTT.pub(topic, message, 1);
-  print('Published:', ok, topic, '->', message);
-}, null);
-
-// Monitor network connectivity.
 Event.addGroupHandler(Net.EVENT_GRP, function(ev, evdata, arg) {
   let evs = '???';
   if (ev === Net.STATUS_DISCONNECTED) {
@@ -42,6 +20,12 @@ Event.addGroupHandler(Net.EVENT_GRP, function(ev, evdata, arg) {
     evs = 'CONNECTING';
   } else if (ev === Net.STATUS_CONNECTED) {
     evs = 'CONNECTED';
+    
+    download(function(){
+      print('DWD Done');
+    });
+    
+    
   } else if (ev === Net.STATUS_GOT_IP) {
     evs = 'GOT_IP';
   }
