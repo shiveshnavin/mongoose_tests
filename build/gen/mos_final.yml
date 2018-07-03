@@ -145,6 +145,7 @@ filesystem:
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/init.js
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/lib.js
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/ota.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/worker.js
 binary_libs:
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/libs/mongoose/lib/esp32/libmongoose.a
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/libs/ota-shadow/lib/esp32/libota-shadow.a

@@ -2,5 +2,5 @@
   "arch": "esp32",
   "platform": "esp32",
   "app_name": "mongoose_tests",
-  "build_time_ms": 60183
+  "build_time_ms": 63426
 }

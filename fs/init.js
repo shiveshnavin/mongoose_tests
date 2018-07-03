@@ -1,9 +1,10 @@
 load('api_file.js'); 
 load('api_timer.js'); 
 load('api_rpc.js'); 
+load('api_sys.js'); 
 load('ota.js'); 
 
-let s = read_data('update.json');
+let s = read_data('updater_data.json');
   if(s===null)
   {
     s={
@@ -12,7 +13,7 @@ let s = read_data('update.json');
       status:"COMMITED_OK"
 
     };
-    write_data('update.json',s);
+    write_data('updater_data.json',s);
   }
 if(s.status==="COMMITED_OK")
 {
@@ -25,18 +26,13 @@ else if(s.status==="TO_COMMIT")
   File.rename('worker.js.new', 'worker.js');
   Timer.set(10000  , 0, function() {
      
-      s = read_data('update.json');
+      s = read_data('updater_data.json');
       if(s.status==="COMMIED_OK"){
 
         print('Seems all went ok');
       }
       else{
-        print('ugh rolling back');
-        File.remove('worker.js');
-        File.rename('worker.js.bak', 'worker.js');
-        s.status="COMMITED_OK";
-        write_data('update.json',s);
-        Sys.reboot(5);
+       UPD.rollback(s);
       }
       
     
@@ -46,32 +42,29 @@ else if(s.status==="TO_COMMIT")
 
 
 
-let size;
+let size; let fname;
 RPC.addHandler('update',function(args){
    
 
-  let url=args.url;
-  let name=args.name;
   size=args.size;
-  s = read_data('update.json');
-  if(s!==null)
-  {
-    s.files[0]={
-
-      file_o:args.name,
-      file_n:args.name+".new"
-
-    };
-    write_data('update.json',s);
-  }
-  download(url,name,function(res){
-
+  fname=args.name;
+ 
+  download(args.url,fname,function(res){
+ 
     if(res!==null)
     {
-      
-      s = read_data('update.json');
-      s.status="TO_COMMIT";
-      write_data("update.json",s);
+      let s={
+
+        files:[{
+  
+        file_o:fname,
+        file_n:fname+".new"
+  
+      }],
+      status:"TO_COMMIT"
+
+      };   
+      write_data("updater_data.json",s);
       print('File Updated...Rebooting now');
       Sys.reboot(5);
     }
@@ -81,6 +74,20 @@ RPC.addHandler('update',function(args){
     
   });
   return {"result":"Update started !"};
+
+});
+
+
+RPC.addHandler('downloadFile',function(args){
+   
+
+  let url=args.url;
+  let name=args.name; 
+  download(url,name,function(args){
+    print('dwd done...rebooting');
+    Sys.reboot(5);
+  });
+  return {"result":"File Download Start!"};
 
 });
 
