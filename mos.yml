@@ -7,13 +7,6 @@ libs_version: ${mos.version}
 modules_version: ${mos.version}
 mongoose_os_version: ${mos.version}
 
-
-conds:
-  - when: mos.platform == "esp32"
-    apply:
-      build_vars:                                           # Add these
-        ESP_IDF_EXTRA_PARTITION: fs_ext,data,spiffs,,2048K   # two lines
-
 # Optional. List of tags for online search.
 
 
