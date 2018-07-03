@@ -1,6 +1,7 @@
 load('api_file.js');
 load('api_rpc.js');
 load('api_sys.js');
+load('api_timer.js');
 let UPD={
 
     rollback:function(s){
@@ -11,10 +12,56 @@ let UPD={
         write_data('updater_data.json',s);
         Sys.reboot(5);
     },
-    commit:function(s)
+    commit:function()
     {
-        s.status="COMMIED_OK";
+        let s={
+          files:[],
+          status:"COMMIED_OK"
+        };
         write_data("updater_data.json",s);
+
+    },
+    check:function()
+    {
+              
+        let s = read_data('updater_data.json');
+          if(s===null)
+          {
+            s={
+        
+              files:[],
+              status:"COMMITED_OK"
+        
+            };
+            write_data('updater_data.json',s);
+          }
+        if(s.status==="COMMITED_OK")
+        {
+          load('worker.js');
+        }
+        else if(s.status==="TO_COMMIT")
+        {
+          print('Seems like changes to be commited');
+          File.rename('worker.js', 'worker.js.bak');
+          File.rename('worker.js.new', 'worker.js');
+          Timer.set(10000  , 0, function() {
+             
+              s = read_data('updater_data.json');
+              if(s.status==="COMMIED_OK"){
+        
+                print('Seems all went ok');
+              }
+              else{
+               UPD.rollback(s);
+              }
+              
+            
+          }, null);
+          load('worker.js');
+        }
+        
+        
+      return s;
 
     }
 
