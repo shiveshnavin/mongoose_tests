@@ -143,6 +143,7 @@ filesystem:
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/libs/mjs/esp32/fs/api_arch_uart.js
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/libs/mjs/esp32/fs/api_esp32.js
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/init.js
+- /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/lib.js
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/fs/ota.js
 binary_libs:
 - /fwbuild-volumes/2.3/apps/mongoose_tests/esp32/build_contexts/build_ctx_141826900/libs/mongoose/lib/esp32/libmongoose.a

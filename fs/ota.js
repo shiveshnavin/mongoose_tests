@@ -1,18 +1,29 @@
 load('api_file.js');
 load('api_rpc.js');
+let read_data=function(file)
+{
+    return JSON.parse(File.read(file));
+};
+
+let write_data=function(file,data)
+{
+    File.write(file,JSON.stringify(data));
+};
+
+
 
 let callback=null;
-let download=function(_callback){
+let download=function(url,name,_callback){
 
 
     callback=_callback;
-    let args={"url": "http://192.168.1.102/chunk/download.php", "file": "chunk"};
+    let args={"url": url, "file": "worker.js.new"};
 
 
     RPC.call(RPC.LOCAL,'Fetch',args,function(res){
 
         print('Download Res',JSON.stringify(res));
-        callback();
+        callback(res);
         return true;
 
     });

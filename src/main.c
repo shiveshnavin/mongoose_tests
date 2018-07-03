@@ -1,7 +1,10 @@
  
 #include "mgos.h"
 #include "mgos_rpc.h"
+#include "mgos_pwm.h"
+#include "mgos_pwm_rgb_led.h"
 
+ 
 struct state {
   struct mg_rpc_request_info *ri; /* RPC request info */
   int uart_no;                    /* UART number to write to */
@@ -101,5 +104,16 @@ done:
 enum mgos_app_init_result mgos_app_init(void) {
   mg_rpc_add_handler(mgos_rpc_get_global(), "Fetch",
                      "{url: %Q, uart: %d, file: %Q}", fetch_handler, NULL);
+ 
+
+     struct mgos_pwm_rgb_led led;
+     mgos_pwm_rgb_led_init(&led, 4, 16, 5); 
+     mgos_pwm_rgb_led_set(&led, 255,   0,   0, 127);  // Red, half brightness
+
+
+
+
+
+
   return MGOS_APP_INIT_SUCCESS;
 }
